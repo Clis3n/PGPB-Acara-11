@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F9F9F9">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Tambahkan"
+        android:textColor="#3D3DFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:elevation="4dp" />
+
+    <!-- Title Input -->
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Judul"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="2dp"
+        android:textColorHint="#999999"
+        android:textColor="#333333" />
+
+    <!-- Description Input -->
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Deskripsi"
+        android:background="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="2dp"
+        android:textColorHint="#999999"
+        android:textColor="#333333"
+        android:gravity="top"
+        android:minHeight="100dp" />
+
+    <!-- Date Input -->
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal"
+        android:focusable="false"
+        android:clickable="true"
+        android:background="@android:color/white"
+        android:padding="12dp"
+        android:elevation="2dp"
+        android:textColorHint="#999999"
+        android:textColor="#333333" />
+
+
+    <!-- Button Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="center">
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Buat"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3D3DFF"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</LinearLayout>
